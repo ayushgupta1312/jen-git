@@ -8,6 +8,7 @@ RUN npm install
 
 COPY myshop .
 
+RUN chmod -R 777 node_modules
 RUN npm run build
 
 FROM nginx:alpine
